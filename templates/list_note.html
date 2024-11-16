@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="mt-5">
+    {% for i in data %}
+    <a href="{% url 'detail' i.id %}">{{ i.title }}</a><br />
+    {% endfor %}
+</div>
+{% endblock content %}
